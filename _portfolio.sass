@@ -1,0 +1,62 @@
+#portfolio
+    padding: 96px 0px
+    background-color: #f8f9fa
+    .first
+        h1
+            color: #212529
+            font-size: 40px
+            margin-bottom: 16px
+            font-weight: 700
+        h4
+            font-size: 18px
+            font-weight: 400
+            color: #6c757d
+            margin-bottom: 64px
+
+    .second
+        padding: 24px
+        background-color: #ffffff
+        h2
+            font-weight: 700
+            font-size: 24px
+            color: #212529
+            padding-bottom: 10px
+        h3
+            color: #6c757d
+            font-size: 18px
+    .imgbox
+        position: relative
+        &:hover
+            opacity: 0.9
+            .icon
+                opacity: 1
+        .icon
+            position: absolute
+            top: 40%
+            width: 100%
+            text-align: center
+            font-size: 60px
+            opacity: 0
+            color: #ffffff
+        .overlay
+            position: absolute
+            top: 0
+            bottom: 0
+            left: 0
+            right: 0
+            opacity: 0
+            transition: 0.3s
+            background-color: #fcb700
+            &:hover
+                opacity: 0.9
+        .overlay, .icon, i
+            cursor: pointer
+    @media  ( max-width: 576px )
+        .first
+            h4
+                font-size: 20px
+                margin-bottom: 35px
+        .second
+            margin-bottom: 40px
+            h2,h3
+                font-size: 30px    

@@ -1,0 +1,77 @@
+header
+    padding: 16px 0
+    background-color: #212529
+    height: 75px
+    display: flex
+    align-items: center
+    position: fixed
+    top: 0
+    right: 0
+    left: 0
+    z-index: 1
+    .imgbox
+        width: 140px
+        padding-left: -50px
+        img
+            cursor: pointer
+    nav
+        a
+            padding: 15px
+            font-size: 18px
+            color: #ffffff
+            transition: 0.15s
+            cursor: pointer
+            &:hover
+                color: #ffc800
+
+    .btn
+        color: #ffffff
+        display: none
+        border: 1px solid #ffffff
+        padding: 2px
+        opacity: 0.4
+        font-weight: 700
+
+    @media (max-width: 1200px)
+        .menu
+            display: flex
+            justify-content: space-around
+
+    @media  ( max-width: 992px  )
+        nav
+            display: none
+            margin-right: 55px
+            a
+                margin: 0 10px
+            .imgbox
+                margin-left: 40px
+        .btn
+            display: block    
+            padding: 5px 10px 5px 10px  
+            display: flex
+            h1
+                margin-right: 5px 
+
+    @media screen and ( max-width: 768px )
+        nav
+            display: none
+        .imgbox
+            margin-left: 20px
+
+    @media screen and ( max-width: 576px )
+        .menu
+            height: 70px
+            .imgbox
+                margin-left: 20px
+
+    @media screen and ( max-width: 280px  )
+        .menu
+            display: flex
+            flex-direction: column
+            margin: 10px 100px 10px 0
+            .btn
+                padding: 2px 2px
+                
+
+  
+                    
